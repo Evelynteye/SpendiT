@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="description" content="SpendiT - Track your expenses" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpendiT</title>
+    <style>
+      body {
+        background: #0f172a;
+        margin: 0;
+      }
+      #loader {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: sans-serif;
+      }
+      .spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid rgba(255, 255, 255, 0.2);
+        border-top-color: white;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loader">
+      <div class="spinner"></div>
+      <p style="margin-top: 16px">SPENDIT LOADING...</p>
+    </div>
+    <script src="flutter_bootstrap.js" async></script>
+  </body>
+</html>
